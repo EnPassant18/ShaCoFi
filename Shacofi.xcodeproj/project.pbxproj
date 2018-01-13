@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE9EE20E2003E67D00962270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EE20D2003E67D00962270 /* AppDelegate.swift */; };
+		EE9EE2102003E67D00962270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EE20F2003E67D00962270 /* ViewController.swift */; };
+		EE9EE2132003E67D00962270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9EE2112003E67D00962270 /* Main.storyboard */; };
+		EE9EE2152003E67D00962270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9EE2142003E67D00962270 /* Assets.xcassets */; };
+		EE9EE2182003E67D00962270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9EE2162003E67D00962270 /* LaunchScreen.storyboard */; };
+		EE9EE2232003E67D00962270 /* ShacofiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EE2222003E67D00962270 /* ShacofiTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE9EE21F2003E67D00962270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE9EE2022003E67D00962270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE9EE2092003E67D00962270;
+			remoteInfo = TBD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE9EE20A2003E67D00962270 /* Shacofi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shacofi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9EE20D2003E67D00962270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE9EE20F2003E67D00962270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE9EE2122003E67D00962270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE9EE2142003E67D00962270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE9EE2172003E67D00962270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE9EE2192003E67D00962270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9EE21E2003E67D00962270 /* ShacofiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShacofiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9EE2222003E67D00962270 /* ShacofiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShacofiTests.swift; sourceTree = "<group>"; };
+		EE9EE2242003E67D00962270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE9EE2072003E67D00962270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9EE21B2003E67D00962270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE9EE2012003E67D00962270 = {
+			isa = PBXGroup;
+			children = (
+				EE9EE20C2003E67D00962270 /* Shacofi */,
+				EE9EE2212003E67D00962270 /* ShacofiTests */,
+				EE9EE20B2003E67D00962270 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE9EE20B2003E67D00962270 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE9EE20A2003E67D00962270 /* Shacofi.app */,
+				EE9EE21E2003E67D00962270 /* ShacofiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE9EE20C2003E67D00962270 /* Shacofi */ = {
+			isa = PBXGroup;
+			children = (
+				EE9EE20D2003E67D00962270 /* AppDelegate.swift */,
+				EE9EE20F2003E67D00962270 /* ViewController.swift */,
+				EE9EE2112003E67D00962270 /* Main.storyboard */,
+				EE9EE2142003E67D00962270 /* Assets.xcassets */,
+				EE9EE2162003E67D00962270 /* LaunchScreen.storyboard */,
+				EE9EE2192003E67D00962270 /* Info.plist */,
+			);
+			path = Shacofi;
+			sourceTree = "<group>";
+		};
+		EE9EE2212003E67D00962270 /* ShacofiTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE9EE2222003E67D00962270 /* ShacofiTests.swift */,
+				EE9EE2242003E67D00962270 /* Info.plist */,
+			);
+			path = ShacofiTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE9EE2092003E67D00962270 /* Shacofi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9EE2272003E67D00962270 /* Build configuration list for PBXNativeTarget "Shacofi" */;
+			buildPhases = (
+				EE9EE2062003E67D00962270 /* Sources */,
+				EE9EE2072003E67D00962270 /* Frameworks */,
+				EE9EE2082003E67D00962270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shacofi;
+			productName = TBD;
+			productReference = EE9EE20A2003E67D00962270 /* Shacofi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE9EE21D2003E67D00962270 /* ShacofiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9EE22A2003E67D00962270 /* Build configuration list for PBXNativeTarget "ShacofiTests" */;
+			buildPhases = (
+				EE9EE21A2003E67D00962270 /* Sources */,
+				EE9EE21B2003E67D00962270 /* Frameworks */,
+				EE9EE21C2003E67D00962270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE9EE2202003E67D00962270 /* PBXTargetDependency */,
+			);
+			name = ShacofiTests;
+			productName = TBDTests;
+			productReference = EE9EE21E2003E67D00962270 /* ShacofiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE9EE2022003E67D00962270 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Daniel Kostovetsky";
+				TargetAttributes = {
+					EE9EE2092003E67D00962270 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EE9EE21D2003E67D00962270 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE9EE2092003E67D00962270;
+					};
+				};
+			};
+			buildConfigurationList = EE9EE2052003E67D00962270 /* Build configuration list for PBXProject "Shacofi" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE9EE2012003E67D00962270;
+			productRefGroup = EE9EE20B2003E67D00962270 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE9EE2092003E67D00962270 /* Shacofi */,
+				EE9EE21D2003E67D00962270 /* ShacofiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE9EE2082003E67D00962270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9EE2182003E67D00962270 /* LaunchScreen.storyboard in Resources */,
+				EE9EE2152003E67D00962270 /* Assets.xcassets in Resources */,
+				EE9EE2132003E67D00962270 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9EE21C2003E67D00962270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE9EE2062003E67D00962270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9EE2102003E67D00962270 /* ViewController.swift in Sources */,
+				EE9EE20E2003E67D00962270 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9EE21A2003E67D00962270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9EE2232003E67D00962270 /* ShacofiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE9EE2202003E67D00962270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE9EE2092003E67D00962270 /* Shacofi */;
+			targetProxy = EE9EE21F2003E67D00962270 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE9EE2112003E67D00962270 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9EE2122003E67D00962270 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE9EE2162003E67D00962270 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9EE2172003E67D00962270 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE9EE2252003E67D00962270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE9EE2262003E67D00962270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE9EE2282003E67D00962270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = shacofi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.shacofi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE9EE2292003E67D00962270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = shacofi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.shacofi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE9EE22B2003E67D00962270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShacofiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShacofiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shacofi.app/shacofi";
+			};
+			name = Debug;
+		};
+		EE9EE22C2003E67D00962270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShacofiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShacofiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shacofi.app/shacofi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE9EE2052003E67D00962270 /* Build configuration list for PBXProject "Shacofi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9EE2252003E67D00962270 /* Debug */,
+				EE9EE2262003E67D00962270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9EE2272003E67D00962270 /* Build configuration list for PBXNativeTarget "Shacofi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9EE2282003E67D00962270 /* Debug */,
+				EE9EE2292003E67D00962270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9EE22A2003E67D00962270 /* Build configuration list for PBXNativeTarget "ShacofiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9EE22B2003E67D00962270 /* Debug */,
+				EE9EE22C2003E67D00962270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE9EE2022003E67D00962270 /* Project object */;
+}
