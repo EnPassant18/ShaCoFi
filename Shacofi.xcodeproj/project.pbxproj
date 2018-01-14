@@ -13,6 +13,7 @@
 		EE9EE2152003E67D00962270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9EE2142003E67D00962270 /* Assets.xcassets */; };
 		EE9EE2182003E67D00962270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9EE2162003E67D00962270 /* LaunchScreen.storyboard */; };
 		EE9EE2232003E67D00962270 /* ShacofiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EE2222003E67D00962270 /* ShacofiTests.swift */; };
+		EEE125FE200A9342004A0ECA /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE125FD200A9342004A0ECA /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		EE9EE21E2003E67D00962270 /* ShacofiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShacofiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9EE2222003E67D00962270 /* ShacofiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShacofiTests.swift; sourceTree = "<group>"; };
 		EE9EE2242003E67D00962270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE125FD200A9342004A0ECA /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				EE9EE20D2003E67D00962270 /* AppDelegate.swift */,
 				EE9EE20F2003E67D00962270 /* ViewController.swift */,
+				EEE125FD200A9342004A0ECA /* GameManager.swift */,
 				EE9EE2112003E67D00962270 /* Main.storyboard */,
 				EE9EE2142003E67D00962270 /* Assets.xcassets */,
 				EE9EE2162003E67D00962270 /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9EE2102003E67D00962270 /* ViewController.swift in Sources */,
+				EEE125FE200A9342004A0ECA /* GameManager.swift in Sources */,
 				EE9EE20E2003E67D00962270 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
