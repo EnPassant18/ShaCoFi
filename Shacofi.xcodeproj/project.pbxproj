@@ -81,8 +81,8 @@
 			children = (
 				EE9EE20D2003E67D00962270 /* AppDelegate.swift */,
 				EE9EE20F2003E67D00962270 /* ViewController.swift */,
-				EEE125FD200A9342004A0ECA /* GameManager.swift */,
 				EE9EE2112003E67D00962270 /* Main.storyboard */,
+				EEE125FD200A9342004A0ECA /* GameManager.swift */,
 				EE9EE2142003E67D00962270 /* Assets.xcassets */,
 				EE9EE2162003E67D00962270 /* LaunchScreen.storyboard */,
 				EE9EE2192003E67D00962270 /* Info.plist */,

@@ -410,8 +410,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="A5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7C-QN-7kq"/>
-                                                    <action selector="A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Hw-Ei-xoK"/>
                                                     <action selector="actionA5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m8v-82-FHx"/>
                                                 </connections>
                                             </button>
@@ -422,7 +420,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="B5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgu-Lr-U3H"/>
                                                     <action selector="actionB5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3U-3W-NwP"/>
                                                 </connections>
                                             </button>
@@ -433,7 +430,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="C5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2B-ry-RD2"/>
                                                     <action selector="actionC5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sO4-CR-c4C"/>
                                                 </connections>
                                             </button>
@@ -449,7 +445,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="A4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJd-Ba-dDg"/>
                                                     <action selector="actionA4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ylu-2O-l0P"/>
                                                 </connections>
                                             </button>
@@ -460,7 +455,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="B4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YXH-vQ-NCZ"/>
                                                     <action selector="actionB4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERg-Qc-zRP"/>
                                                 </connections>
                                             </button>
@@ -471,7 +465,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="C4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z0e-KF-zpp"/>
                                                     <action selector="actionC4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nya-wi-3ML"/>
                                                 </connections>
                                             </button>
@@ -487,7 +480,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="A3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EZv-d6-mLb"/>
                                                     <action selector="actionA3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vy-hC-FVX"/>
                                                 </connections>
                                             </button>
@@ -498,7 +490,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="B3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvs-bo-EO8"/>
                                                     <action selector="actionB3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cDR-g8-lWq"/>
                                                 </connections>
                                             </button>
@@ -509,7 +500,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="C3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIt-pJ-s2f"/>
                                                     <action selector="actionC3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2M-EA-9yr"/>
                                                 </connections>
                                             </button>
@@ -525,8 +515,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="A2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxm-2O-Bfe"/>
-                                                    <action selector="A3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlp-Cw-gsM"/>
                                                     <action selector="actionA2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4k-Zs-dNI"/>
                                                 </connections>
                                             </button>
@@ -537,7 +525,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="B2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVU-AR-aAw"/>
                                                     <action selector="actionB2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1H6-Ue-QdG"/>
                                                 </connections>
                                             </button>
@@ -548,7 +535,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="C2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tbn-8r-dL5"/>
                                                     <action selector="actionC2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NiK-Cr-SiH"/>
                                                 </connections>
                                             </button>
@@ -564,7 +550,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="A1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCY-sc-y2o"/>
                                                     <action selector="actionA1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teE-G3-fRq"/>
                                                 </connections>
                                             </button>
@@ -575,7 +560,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="B1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPG-1i-rXC"/>
                                                     <action selector="actionB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Bu-Ig-V2m"/>
                                                 </connections>
                                             </button>
@@ -586,7 +570,6 @@
                                                 </constraints>
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
-                                                    <action selector="C1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCV-KY-iFs"/>
                                                     <action selector="actionC1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOe-fS-O0h"/>
                                                 </connections>
                                             </button>
@@ -610,21 +593,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="A1" destination="oVG-L7-qw4" id="S21-sF-mu2"/>
-                        <outlet property="A2" destination="zd6-Y4-ZHj" id="xIC-yH-Oi1"/>
-                        <outlet property="A3" destination="EN1-Xx-aqE" id="WgC-un-vqE"/>
-                        <outlet property="A4" destination="07G-gM-o45" id="xkG-Ws-Yq5"/>
-                        <outlet property="A5" destination="Sjb-3g-XyB" id="OXz-7n-tsl"/>
-                        <outlet property="B1" destination="nWO-xm-4NP" id="4U6-nO-bMa"/>
-                        <outlet property="B2" destination="NeA-32-vjS" id="Tgd-mG-k5J"/>
-                        <outlet property="B3" destination="xN9-iU-f1e" id="BH9-2M-Nen"/>
-                        <outlet property="B4" destination="Jt9-ea-Njz" id="MND-Pp-w7n"/>
-                        <outlet property="B5" destination="qYE-r2-2rY" id="7jp-O2-j8T"/>
-                        <outlet property="C1" destination="2Cm-ww-k2B" id="FhJ-BQ-3Lq"/>
-                        <outlet property="C2" destination="QHw-qD-WEH" id="R7A-Ol-IuL"/>
-                        <outlet property="C3" destination="EYy-Oh-CVU" id="BVw-Jz-gAL"/>
-                        <outlet property="C4" destination="FP3-yQ-dcQ" id="MJU-Xo-298"/>
-                        <outlet property="C5" destination="2LP-GG-ryb" id="QlN-RM-hl5"/>
                         <outlet property="best" destination="3hu-6g-j5C" id="QDe-SZ-SKe"/>
                         <outlet property="outletA1" destination="oVG-L7-qw4" id="WhD-Y8-Oke"/>
                         <outlet property="outletA2" destination="zd6-Y4-ZHj" id="GfE-Xl-Nvp"/>

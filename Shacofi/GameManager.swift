@@ -89,24 +89,37 @@ class Game {
     
     var outlets: [[UIButton]]
     var selected: [(Int, Int)] = []
+    var score = 0
     var board: [[Tile]] = [
-        [Tile.blank, Tile.blank, Tile.blank],
-        [Tile.blank, Tile.blank, Tile.blank],
-        [Tile.blank, Tile.blank, Tile.blank],
-        [Tile.blank, Tile.blank, Tile.blank],
-        [Tile.blank, Tile.blank, Tile.blank]]
+        [Tile.blank, Tile.blank, Tile.blank, Tile.blank, Tile.blank],
+        [Tile.blank, Tile.blank, Tile.blank, Tile.blank, Tile.blank],
+        [Tile.blank, Tile.blank, Tile.blank, Tile.blank, Tile.blank]]
     
     init(outlets: [[UIButton]]) {
         self.outlets = outlets
+        spawn()
+        spawn()
+        spawn()
+        spawn()
+        spawn()
     }
     
     func updateDisplay() {
-        for row in [1, 2, 3, 4, 5] {
-            for col in [1, 2, 3] {
-                outlets[row][col].setImage(board[row][col].getImage(),
+        for col in [0, 1, 2] {
+            for row in [0, 1, 2, 3, 4] {
+                outlets[col][row].setImage(board[col][row].getImage(),
                                            for: .normal)
             }
         }
+    }
+    
+    func _getColumnLength(col: Int) -> Int {
+        for row in [0, 1, 2, 3, 4] {
+            if board[col][row] == Tile.blank {
+                return row
+            }
+        }
+        return 5
     }
     
     // Spawns three random tiles on the lowest blank row
@@ -117,17 +130,14 @@ class Game {
             let shape = Tile.Shape(rawValue: Int(arc4random_uniform(3)))!
             return Tile.tile(color, fill, shape, false)
         }
-        var insertRow: Int!
-        determineInsertRow: for row in [0, 1, 2, 3, 4] {
-            if board[row][0] == Tile.blank {
-                insertRow = row
-                break determineInsertRow
-            }
-        }
-        if let validRow = insertRow {
-            board[validRow] = [spawnSingle(), spawnSingle(), spawnSingle()]
+        let insertRow = _getColumnLength(col: 0)
+        switch insertRow {
+        case 0...4:
+            board[0][insertRow] = spawnSingle()
+            board[1][insertRow] = spawnSingle()
+            board[2][insertRow] = spawnSingle()
             updateDisplay()
-        } else {
+        default:
             print("you lose") // STUB
         }
     }
@@ -138,15 +148,15 @@ class Game {
     and records the deselection. Also, if three tiles are now selected,
     calls the _onThreeSelected method. */
     func toggle(row: Int, col: Int) {
-        switch board[row][col] {
+        switch board[col][row] {
         case Tile.tile(let color, let fill, let shape, true):
-            board[row][col] = Tile.tile(color, fill, shape, false)
+            board[col][row] = Tile.tile(color, fill, shape, false)
             updateDisplay()
-            selected = Array(selected.drop(while: { $0 == (row, col) }))
+            selected = selected.filter { $0 != (col, row) }
         case Tile.tile(let color, let fill, let shape, false):
-            board[row][col] = Tile.tile(color, fill, shape, true)
+            board[col][row] = Tile.tile(color, fill, shape, true)
             updateDisplay()
-            selected.append((row, col))
+            selected.append((col, row))
             if selected.count == 3 {
                 _onThreeSelected()
             }
@@ -161,18 +171,20 @@ class Game {
         func rebalance() {
             // Moves a tile from one board position to another
             func move(fromRow: Int, fromCol: Int, toRow: Int, toCol: Int) {
-                board[toRow][toCol] = board[fromRow][fromCol]
-                board[fromRow][fromCol] = Tile.blank
+                board[toCol][toRow] = board[fromCol][fromRow]
+                board[fromCol][fromRow] = Tile.blank
             }
-            var col1Length = 0
-            var col2Length = 0
-            var col3Length = 0
-            for row in board {
-                if !(row[0] == Tile.blank) { col1Length += 1 }
-                if !(row[1] == Tile.blank) { col2Length += 1 }
-                if !(row[2] == Tile.blank) { col3Length += 1 }
+            for col in [0, 1, 2] {
+                for row in [1, 2, 3, 4] {
+                    if !(board[col][row] == Tile.blank) && board[col][row - 1] == Tile.blank {
+                        move(fromRow: row, fromCol: col, toRow: _getColumnLength(col: col), toCol: col)
+                    }
+                }
             }
-            if (col1Length != col2Length) && (col2Length != col3Length) {
+            let col1Length = _getColumnLength(col: 0)
+            let col2Length = _getColumnLength(col: 1)
+            let col3Length = _getColumnLength(col: 2)
+            if (col1Length != col2Length) && (col2Length != col3Length) && (col1Length != col3Length) {
                 switch max(col1Length, col2Length, col3Length) {
                 case col1Length:
                     if col2Length > col3Length {
@@ -220,6 +232,7 @@ class Game {
                          toRow: col3Length + 1, toCol: 2)
                 }
             }
+            
         }
         if Tile.isTrio(board[selected[0].0][selected[0].1],
                        board[selected[1].0][selected[1].1],
@@ -228,6 +241,7 @@ class Game {
             board[selected[1].0][selected[1].1] = Tile.blank
             board[selected[2].0][selected[2].1] = Tile.blank
             selected = []
+            score += 1
             rebalance()
             updateDisplay()
         } else {
