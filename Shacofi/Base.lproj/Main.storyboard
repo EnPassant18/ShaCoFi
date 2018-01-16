@@ -403,7 +403,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fTr-L2-Rwt" userLabel="Row 5">
                                         <rect key="frame" x="12" y="75" width="311.5" height="90.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjb-3g-XyB" userLabel="5A">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjb-3g-XyB" userLabel="A5">
                                                 <rect key="frame" x="0.0" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Sjb-3g-XyB" secondAttribute="height" multiplier="1:1" id="wAQ-c8-nbC"/>
@@ -412,9 +412,10 @@
                                                 <connections>
                                                     <action selector="A5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7C-QN-7kq"/>
                                                     <action selector="A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Hw-Ei-xoK"/>
+                                                    <action selector="actionA5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m8v-82-FHx"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYE-r2-2rY" userLabel="5B">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYE-r2-2rY" userLabel="B5">
                                                 <rect key="frame" x="110.5" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="qYE-r2-2rY" secondAttribute="height" multiplier="1:1" id="IUY-Ob-sUW"/>
@@ -422,9 +423,10 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="B5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgu-Lr-U3H"/>
+                                                    <action selector="actionB5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3U-3W-NwP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LP-GG-ryb" userLabel="5C">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LP-GG-ryb" userLabel="C5">
                                                 <rect key="frame" x="221" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2LP-GG-ryb" secondAttribute="height" multiplier="1:1" id="Bwa-Fs-3PO"/>
@@ -432,6 +434,7 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="C5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2B-ry-RD2"/>
+                                                    <action selector="actionC5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sO4-CR-c4C"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -439,7 +442,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fj2-f1-9Qk" userLabel="Row 4">
                                         <rect key="frame" x="12" y="185.5" width="311.5" height="90.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07G-gM-o45" userLabel="4A">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07G-gM-o45" userLabel="A4">
                                                 <rect key="frame" x="0.0" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="07G-gM-o45" secondAttribute="height" multiplier="1:1" id="ISn-tA-7vS"/>
@@ -447,9 +450,10 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="A4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJd-Ba-dDg"/>
+                                                    <action selector="actionA4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ylu-2O-l0P"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jt9-ea-Njz" userLabel="4B">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jt9-ea-Njz" userLabel="B4">
                                                 <rect key="frame" x="110.5" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Jt9-ea-Njz" secondAttribute="height" multiplier="1:1" id="szh-Ls-DNG"/>
@@ -457,9 +461,10 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="B4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YXH-vQ-NCZ"/>
+                                                    <action selector="actionB4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERg-Qc-zRP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP3-yQ-dcQ" userLabel="4C">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP3-yQ-dcQ" userLabel="C4">
                                                 <rect key="frame" x="221" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FP3-yQ-dcQ" secondAttribute="height" multiplier="1:1" id="SRB-3y-Fcm"/>
@@ -467,6 +472,7 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="C4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z0e-KF-zpp"/>
+                                                    <action selector="actionC4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nya-wi-3ML"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -474,7 +480,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bdX-0e-Y5c" userLabel="Row 3">
                                         <rect key="frame" x="12.5" y="296" width="310" height="90"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EN1-Xx-aqE" userLabel="3A">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EN1-Xx-aqE" userLabel="A3">
                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="EN1-Xx-aqE" secondAttribute="height" multiplier="1:1" id="VkK-cY-WBI"/>
@@ -482,9 +488,10 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="A3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EZv-d6-mLb"/>
+                                                    <action selector="actionA3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vy-hC-FVX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN9-iU-f1e" userLabel="3B">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN9-iU-f1e" userLabel="B3">
                                                 <rect key="frame" x="110" y="0.0" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xN9-iU-f1e" secondAttribute="height" multiplier="1:1" id="CnL-SM-raG"/>
@@ -492,9 +499,10 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="B3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvs-bo-EO8"/>
+                                                    <action selector="actionB3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cDR-g8-lWq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYy-Oh-CVU" userLabel="3C">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYy-Oh-CVU" userLabel="C3">
                                                 <rect key="frame" x="220" y="0.0" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="EYy-Oh-CVU" secondAttribute="height" multiplier="1:1" id="xiI-N3-aYf"/>
@@ -502,6 +510,7 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="C3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIt-pJ-s2f"/>
+                                                    <action selector="actionC3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2M-EA-9yr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -509,7 +518,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DZo-Fi-NlM" userLabel="Row 2">
                                         <rect key="frame" x="11.5" y="406" width="312" height="90.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd6-Y4-ZHj" userLabel="2A">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd6-Y4-ZHj" userLabel="A2">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zd6-Y4-ZHj" secondAttribute="height" multiplier="1:1" id="9T9-hT-h0r"/>
@@ -518,9 +527,10 @@
                                                 <connections>
                                                     <action selector="A2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxm-2O-Bfe"/>
                                                     <action selector="A3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlp-Cw-gsM"/>
+                                                    <action selector="actionA2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4k-Zs-dNI"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeA-32-vjS" userLabel="2B">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeA-32-vjS" userLabel="B2">
                                                 <rect key="frame" x="111" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="NeA-32-vjS" secondAttribute="height" multiplier="1:1" id="nbs-Qn-T7n"/>
@@ -528,9 +538,10 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="B2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVU-AR-aAw"/>
+                                                    <action selector="actionB2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1H6-Ue-QdG"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHw-qD-WEH" userLabel="2C">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHw-qD-WEH" userLabel="C2">
                                                 <rect key="frame" x="221.5" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="QHw-qD-WEH" secondAttribute="height" multiplier="1:1" id="K6H-FX-07a"/>
@@ -538,6 +549,7 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="C2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tbn-8r-dL5"/>
+                                                    <action selector="actionC2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NiK-Cr-SiH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -545,7 +557,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SKU-xd-Nxd" userLabel="Row 1">
                                         <rect key="frame" x="11.5" y="516.5" width="312" height="90.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVG-L7-qw4" userLabel="1A">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVG-L7-qw4" userLabel="A1">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="oVG-L7-qw4" secondAttribute="height" multiplier="1:1" id="HBY-Yo-8Hc"/>
@@ -553,9 +565,10 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="A1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCY-sc-y2o"/>
+                                                    <action selector="actionA1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teE-G3-fRq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWO-xm-4NP" userLabel="1B">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWO-xm-4NP" userLabel="B1">
                                                 <rect key="frame" x="111" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="nWO-xm-4NP" secondAttribute="height" multiplier="1:1" id="2QC-Nb-dJe"/>
@@ -563,9 +576,10 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="B1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPG-1i-rXC"/>
+                                                    <action selector="actionB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Bu-Ig-V2m"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cm-ww-k2B" userLabel="1C">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cm-ww-k2B" userLabel="C1">
                                                 <rect key="frame" x="221.5" y="0.0" width="90.5" height="90.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2Cm-ww-k2B" secondAttribute="height" multiplier="1:1" id="MM3-Jc-LyP"/>
@@ -573,6 +587,7 @@
                                                 <state key="normal" image="Blank"/>
                                                 <connections>
                                                     <action selector="C1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCV-KY-iFs"/>
+                                                    <action selector="actionC1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOe-fS-O0h"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -611,6 +626,21 @@
                         <outlet property="C4" destination="FP3-yQ-dcQ" id="MJU-Xo-298"/>
                         <outlet property="C5" destination="2LP-GG-ryb" id="QlN-RM-hl5"/>
                         <outlet property="best" destination="3hu-6g-j5C" id="QDe-SZ-SKe"/>
+                        <outlet property="outletA1" destination="oVG-L7-qw4" id="WhD-Y8-Oke"/>
+                        <outlet property="outletA2" destination="zd6-Y4-ZHj" id="GfE-Xl-Nvp"/>
+                        <outlet property="outletA3" destination="EN1-Xx-aqE" id="xwz-26-BxR"/>
+                        <outlet property="outletA4" destination="07G-gM-o45" id="xpB-hu-qHj"/>
+                        <outlet property="outletA5" destination="Sjb-3g-XyB" id="k4b-Af-M0R"/>
+                        <outlet property="outletB1" destination="nWO-xm-4NP" id="XpN-Al-ITp"/>
+                        <outlet property="outletB2" destination="NeA-32-vjS" id="1kU-3I-AW2"/>
+                        <outlet property="outletB3" destination="xN9-iU-f1e" id="B1x-QV-rY5"/>
+                        <outlet property="outletB4" destination="Jt9-ea-Njz" id="Crq-Hj-4P0"/>
+                        <outlet property="outletB5" destination="qYE-r2-2rY" id="VxZ-Mt-R7g"/>
+                        <outlet property="outletC1" destination="2Cm-ww-k2B" id="17r-v7-gDL"/>
+                        <outlet property="outletC2" destination="QHw-qD-WEH" id="g7N-qs-80d"/>
+                        <outlet property="outletC3" destination="EYy-Oh-CVU" id="sk5-h7-kzC"/>
+                        <outlet property="outletC4" destination="FP3-yQ-dcQ" id="PeC-jx-WPf"/>
+                        <outlet property="outletC5" destination="2LP-GG-ryb" id="4ZQ-16-agL"/>
                         <outlet property="score" destination="ikZ-Xx-Y85" id="F6p-VA-sFP"/>
                     </connections>
                 </viewController>
@@ -632,7 +662,6 @@
         <image name="Tutorial4" width="556" height="858"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="30t-ru-MKr"/>
         <segue reference="5S1-ka-srt"/>
         <segue reference="yzU-oJ-7G9"/>
         <segue reference="HBv-SV-gBP"/>
