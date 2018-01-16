@@ -13,17 +13,127 @@ class ShacofiTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTileGetImage() {
+        XCTAssert(Tile.blank.getImage() == #imageLiteral(resourceName: "Blank"))
+        XCTAssert(Tile.tile(Tile.Color.Cyan, Tile.Fill.Checkered,
+                            Tile.Shape.Circle, false).getImage() == #imageLiteral(resourceName: "CyanCheckeredCircle"))
+        XCTAssert(Tile.tile(Tile.Color.Magenta, Tile.Fill.Solid,
+                            Tile.Shape.Triangle, true).getImage() == #imageLiteral(resourceName: "MagentaSolidTriangle*"))
+    }
+    
+    func testTileEquality() {
+        XCTAssert(Tile.blank == Tile.blank)
+        XCTAssert(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Square, false).toggleSelected()! ==
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Square, true))
+        XCTAssert(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Square, true).toggleSelected()! ==
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Square, true))
+        XCTAssertFalse(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Square, false).toggleSelected()! ==
+            Tile.tile(Tile.Color.Magenta, Tile.Fill.Empty,
+                      Tile.Shape.Square, false))
+        XCTAssertFalse(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Square, true).toggleSelected()! ==
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Solid,
+                      Tile.Shape.Square, true))
+        XCTAssertFalse(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Square, false).toggleSelected()! ==
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Triangle, true))
+    }
+    
+    func testTileToggleSelected() {
+        XCTAssert(Tile.blank.toggleSelected() == nil)
+        XCTAssert(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Square, false).toggleSelected()! ==
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Square, true))
+        XCTAssert(
+            Tile.tile(Tile.Color.Cyan, Tile.Fill.Solid,
+                      Tile.Shape.Circle, true).toggleSelected()! ==
+            Tile.tile(Tile.Color.Cyan, Tile.Fill.Solid,
+                      Tile.Shape.Circle, false))
+    }
+    
+    func testIsTrio() {
+        XCTAssert(Tile.isTrio(
+            Tile.tile(Tile.Color.Cyan, Tile.Fill.Solid,
+                      Tile.Shape.Circle, true),
+            Tile.tile(Tile.Color.Cyan, Tile.Fill.Solid,
+                      Tile.Shape.Circle, true),
+            Tile.tile(Tile.Color.Cyan, Tile.Fill.Solid,
+                      Tile.Shape.Circle, true)))
+        XCTAssert(Tile.isTrio(
+            Tile.tile(Tile.Color.Cyan, Tile.Fill.Solid,
+                      Tile.Shape.Circle, true),
+            Tile.tile(Tile.Color.Magenta, Tile.Fill.Solid,
+                      Tile.Shape.Circle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Solid,
+                      Tile.Shape.Circle, true)))
+        XCTAssert(Tile.isTrio(
+            Tile.tile(Tile.Color.Cyan, Tile.Fill.Solid,
+                      Tile.Shape.Circle, true),
+            Tile.tile(Tile.Color.Magenta, Tile.Fill.Empty,
+                      Tile.Shape.Circle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Checkered,
+                      Tile.Shape.Circle, true)))
+        XCTAssert(Tile.isTrio(
+            Tile.tile(Tile.Color.Cyan, Tile.Fill.Solid,
+                      Tile.Shape.Square, true),
+            Tile.tile(Tile.Color.Magenta, Tile.Fill.Empty,
+                      Tile.Shape.Triangle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Checkered,
+                      Tile.Shape.Circle, true)))
+        XCTAssertFalse(Tile.isTrio(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Solid,
+                      Tile.Shape.Square, true),
+            Tile.tile(Tile.Color.Magenta, Tile.Fill.Empty,
+                      Tile.Shape.Triangle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Checkered,
+                      Tile.Shape.Circle, true)))
+        XCTAssertFalse(Tile.isTrio(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Solid,
+                      Tile.Shape.Square, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Triangle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Checkered,
+                      Tile.Shape.Triangle, true)))
+        XCTAssertFalse(Tile.isTrio(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Solid,
+                      Tile.Shape.Triangle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Triangle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Solid,
+                      Tile.Shape.Triangle, true)))
+        XCTAssertFalse(Tile.isTrio(
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Solid,
+                      Tile.Shape.Triangle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Empty,
+                      Tile.Shape.Triangle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Solid,
+                      Tile.Shape.Triangle, true)))
+        XCTAssertFalse(Tile.isTrio(
+            Tile.tile(Tile.Color.Cyan, Tile.Fill.Solid,
+                      Tile.Shape.Circle, true),
+            Tile.tile(Tile.Color.Magenta, Tile.Fill.Empty,
+                      Tile.Shape.Circle, true),
+            Tile.tile(Tile.Color.Yellow, Tile.Fill.Checkered,
+                      Tile.Shape.Circle, false)))
     }
     
 }

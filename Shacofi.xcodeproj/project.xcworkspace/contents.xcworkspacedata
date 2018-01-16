@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TBD.xcodeproj">
+      location = "self:/Users/Thymathgeek/Documents/Projects/Shacofi/Shacofi.xcodeproj">
    </FileRef>
 </Workspace>

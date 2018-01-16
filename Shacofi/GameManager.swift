@@ -11,15 +11,15 @@ import UIKit
 enum Tile {
     
     enum Color: Int {
-        case red = 0, green = 1, blue = 2
+        case Cyan = 0, Magenta = 1, Yellow = 2
     }
     
     enum Fill: Int {
-        case empty = 0, checkered = 1, solid = 2
+        case Empty = 0, Checkered = 1, Solid = 2
     }
     
     enum Shape: Int {
-        case square = 0, circle = 1, triangle = 2
+        case Square = 0, Circle = 1, Triangle = 2
     }
     
     case blank
@@ -70,13 +70,13 @@ enum Tile {
               .tile(let color3, let fill3, let shape3, true)):
             let correctColors =
                 ((color1 == color2) && (color2 == color3)) ||
-                ((color1 != color2) && (color2 != color3))
+                ((color1 != color2) && (color2 != color3) && (color1 != color3))
             let correctFills =
                 ((fill1 == fill2) && (fill2 == fill3)) ||
-                ((fill1 != fill2) && (fill2 != fill3))
+                ((fill1 != fill2) && (fill2 != fill3) && (fill1 != fill3))
             let correctShapes =
                 ((shape1 == shape2) && (shape2 == shape3)) ||
-                ((shape1 != shape2) && (shape2 != shape3))
+                ((shape1 != shape2) && (shape2 != shape3) && (shape1 != shape3))
             return correctColors && correctFills && correctShapes
         default:
             return false

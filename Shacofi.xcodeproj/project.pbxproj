@@ -393,7 +393,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shacofi.app/shacofi";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shacofi.app/Shacofi";
 			};
 			name = Debug;
 		};
@@ -409,7 +409,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shacofi.app/shacofi";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shacofi.app/Shacofi";
 			};
 			name = Release;
 		};
