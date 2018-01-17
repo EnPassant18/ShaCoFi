@@ -88,20 +88,31 @@ enum Tile {
 class Game {
     
     var outlets: [[UIButton]]
+    var scoreLabel: UILabel
     var selected: [(Int, Int)] = []
     var score = 0
+    var paused = false
+    var spawnDelay: Double = 0
     var board: [[Tile]] = [
         [Tile.blank, Tile.blank, Tile.blank, Tile.blank, Tile.blank],
         [Tile.blank, Tile.blank, Tile.blank, Tile.blank, Tile.blank],
         [Tile.blank, Tile.blank, Tile.blank, Tile.blank, Tile.blank]]
     
-    init(outlets: [[UIButton]]) {
+    init(outlets: [[UIButton]], scoreLabel: UILabel) {
         self.outlets = outlets
+        self.scoreLabel = scoreLabel
         spawn()
         spawn()
         spawn()
-        spawn()
-        spawn()
+        _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true,
+                                 block: { _ in
+                                    self.spawnDelay += (Double(self.score)/100.0 + 0.05)
+                                    print(self.spawnDelay)
+                                    if self.spawnDelay >= 1 {
+                                        self.spawnDelay = 0
+                                        self.spawn()
+                                    }
+        })
     }
     
     func updateDisplay() {
@@ -242,7 +253,12 @@ class Game {
             board[selected[2].0][selected[2].1] = Tile.blank
             selected = []
             score += 1
+            scoreLabel.text = "\(score)"
             rebalance()
+            if _getColumnLength(col: 0) == 2 {
+                spawn()
+                spawnDelay = 0
+            }
             updateDisplay()
         } else {
             board[selected[0].0][selected[0].1] =

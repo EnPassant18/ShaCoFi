@@ -19,12 +19,14 @@ class ViewController: UIViewController {
         game = Game(outlets: [
             [outletA1, outletA2, outletA3, outletA4, outletA5],
             [outletB1, outletB2, outletB3, outletB4, outletB5],
-            [outletC1, outletC2, outletC3, outletC4, outletC5]])
+            [outletC1, outletC2, outletC3, outletC4, outletC5]],
+                    scoreLabel: score)
     }
     
     //MARK: Actions
     
     @IBAction func Pause(_ sender: Any) {
+        game.paused = !game.paused
     }
     
     @IBAction func actionA5(_ sender: Any) {
